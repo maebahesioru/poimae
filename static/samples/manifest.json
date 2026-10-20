@@ -1,0 +1,30 @@
+{
+  "note": "合成画像（プログラムで描いた見本）。実物の写真ではありません。アプリの動作確認用で、精度の主張はこの画像ではなく docs/EVALUATION.md を参照。",
+  "generator": "tools/synth.py",
+  "samples": [
+    {
+      "file": "pet_bottle.png",
+      "label": "ペットボトル",
+      "class": "pet_bottle",
+      "seed": 4101
+    },
+    {
+      "file": "metal_can.png",
+      "label": "アルミ缶",
+      "class": "metal_can",
+      "seed": 4102
+    },
+    {
+      "file": "cardboard.png",
+      "label": "段ボール",
+      "class": "cardboard",
+      "seed": 4103
+    },
+    {
+      "file": "ceramic.png",
+      "label": "茶わん（陶磁器）",
+      "class": "ceramic",
+      "seed": 4104
+    }
+  ]
+}

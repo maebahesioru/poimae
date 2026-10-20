@@ -1,0 +1,280 @@
+Arbiter Hacks V1: Open innovation for all, submit projects that have potential impact and usability! - Devpost
+Log in
+Sign up
+Join a hackathon
+Devpost
+Participate in our public hackathons
+Hackathons
+Projects
+Devpost for Teams
+Access your company's private hackathons
+Login
+Host a hackathon
+Devpost
+Grow your developer ecosystem and promote your platform
+Host a public hackathon
+Devpost for Teams
+Drive innovation, collaboration, and retention within your organization
+Host an internal hackathon
+By use case
+AI hackathons
+Customer hackathons
+Employee hackathons
+Public hackathons
+Resources
+Blog
+Insights into hackathon planning and participation
+Customer stories
+Inspiration from peers and other industry leaders
+Planning guides
+Best practices for planning online and in-person hackathons
+Webinars & events
+Upcoming events and on-demand recordings
+Help desk
+Common questions and support documentation
+Join a hackathon
+Devpost
+Participate in our public hackathons
+Hackathons
+Projects
+Devpost for Teams
+Access your company's private hackathons
+Login
+Host a hackathon
+Devpost
+Grow your developer ecosystem and promote your platform
+Host a public hackathon
+Devpost for Teams
+Drive innovation, collaboration, and retention within your organization
+Host an internal hackathon
+By use case
+AI hackathons
+Customer hackathons
+Employee hackathons
+Public hackathons
+Resources
+Blog
+Insights into hackathon planning and participation
+Customer stories
+Inspiration from peers and other industry leaders
+Planning guides
+Best practices for planning online and in-person hackathons
+Webinars & events
+Upcoming events and on-demand recordings
+Help desk
+Common questions and support documentation
+Log in
+Sign up
+Arbiter Hacks V1
+Oct 20 – Dec 20, 2026
+Join hackathon
+Descend
+Overview
+My projects
+Participants (378)
+Rules
+Project gallery
+Updates
+Discussions
+Arbiter Hacks V1
+Open innovation for all, submit projects that have potential impact and usability!
+Join hackathon
+Who can participate
+Ages 13+ only
+Students only
+Companies/professional organizations excluded from participation
+All countries/territories, excluding
+standard exceptions
+View full rules
+Submissions open soon
+View schedule
+Oct 20 – Dec 20, 2026
+Apple
+Google
+Outlook
+Online
+Public
+$
+3,800
+in cash
+378
+participants
+Arbiter
+Beginner Friendly
+Machine Learning/AI
+Open Ended
+Remember: Join the
+Discord
+for announcments!
+About the challenge
+Arbiter Hacks V1 runs two parallel
+tracks. Pick one when you
+register, or switch before the
+submission deadline. You may
+only submit to one
+track.
+General Track:
+Build anything. Any
+language, any stack, any idea. This
+track rewards technical ambition and
+execution, regardless of subject.
+Theme Track, Rethinking Waste:
+Build something that helps people or
+systems reduce, sort, or recycle waste
+more effectively. Examples include a
+tool that identifies whether an item is
+recyclable, an app that routes food
+waste to donation, a hardware or vision
+system that sorts materials, or a
+dataset or model that improves
+recycling accuracy. If it moves the
+needle on waste, it fits.
+The tracks
+are judged separately, against separate
+rubrics, for separate prizes. A
+polished General submission and a
+high-impact Theme submission compete
+only within their own track.
+Get started
+Register and pick a
+track.
+Form a team of [1 to 4] or go
+solo.
+Late submissions are
+not judged.
+Requirements
+What to Build
+General Track:
+Any working software or hardware project. No topic restriction.
+Theme Track:
+A project whose primary purpose addresses waste reduction, sorting, or recycling. Judges will check that the theme is central to the project, not bolted on. A to-do app with a "recycling" label is a General project, not a Theme one.
+What to Submit
+Every submission must include:
+A public code repository (GitHub, GitLab, or equivalent).
+A demo video, [2 to 3] minutes max, showing the project working. Upload to YouTube or Vimeo and link it.
+A written description: what it does, how you built it, and what you'd do next.
+Theme Track only: one paragraph stating the specific waste problem you targeted and how you'd measure whether it worked.
+Missing the repo or the video makes a submission ineligible.
+Hackathon Sponsors
+Prizes
+$
+3,800
+in prizes
+1st Place General
+$
+1,100
+in cash
+1 winner
+Earn 100 Dollars Cash
+Adaption Credits ($1000)
+1st Place Theme
+$
+1,100
+in cash
+1 winner
+Earn 100 Dollars Cash
+Adaption Credits ($1000)
+2nd Place General
+$
+1,050
+in cash
+1 winner
+Earn 50 Dollars Cash
+Adaption Credits ($1000)
+2nd Place Theme
+$
+50
+in cash
+1 winner
+Earn 50 Dollars Cash
+Adaption Credits ($1000)
+Participation Prize
+$
+500
+in cash
+1 winner
+Adaption Credits ($500)
+Devpost Achievements
+Submitting to this hackathon could earn you:
+Judges
+Aaryav Lal
+AXEIS
+Gayathri Chilukala
+Microsoft
+Sudheer Kumar Pratap
+U.S. Bank
+Aditya Shrivastava
+Barclays
+Suman Debnath
+Crusoe
+Fenil Shah
+Amazon
+Nikhil Singh
+U.S. Bank
+Sharath Chandra Kampili
+Cockroach Labs
+Anudeep Bonagiri
+Cruze
+Sachin Gurjar
+Apexlayer Technologies
+Doshi
+Apple
+Allan Dabre
+PWC
+Bhargav K Korrapati
+Gateway Solutions Inc.
+Aishwarya Kannoth Putlumbath
+AMD
+Tanya Kapoor
+Sheladia Associates, Inc.
+Judging Criteria
+Technical Execution (General)
+Code quality, working functionality, and the difficulty of what was built. Weighted 35%.
+Innovation & Originality
+How novel the idea or approach is. Weighted 25%.
+Completeness & Polish (General)
+How finished the project is. Rough edges, broken features, and unfinished flows lose points. Weighted 25%.
+Presentation & Demo Clarity (General)
+How clearly the demo video and writeup explain what was built. Weighted 15%.
+Impact on Waste Problem (Theme)
+How meaningfully the project reduces, sorts, or improves recycling of waste. The theme must be central, not bolted on. Weighted 35%.
+Technical Execution (Theme)
+Code quality, working functionality, and the difficulty of what was built. Weighted 25%.
+Feasibility (Theme)
+Could this actually be deployed in the real world? A working solution beats a clever one that can't ship. Weighted 20%.
+Presentation & Demo Clarity (Theme)
+How clearly the demo video and writeup explain what was built. Weighted 20%.
+Questions?
+Email the hackathon manager
+Invite others to compete
+Hackathon sponsors
+This site is protected by reCAPTCHA and the Google
+Privacy Policy
+and
+Terms of Service
+apply.
+Devpost
+About
+Careers
+Contact
+Help
+Hackathons
+Browse hackathons
+Explore projects
+Host a hackathon
+Hackathon guides
+Portfolio
+Your projects
+Your hackathons
+Settings
+Connect
+Twitter
+Discord
+Facebook
+LinkedIn
+© 2026 Devpost, Inc. All rights reserved.
+Community guidelines
+Security
+CA notice
+Privacy policy
+Terms of service

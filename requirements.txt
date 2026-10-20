@@ -1,0 +1,10 @@
+# Runtime
+fastapi>=0.110
+uvicorn>=0.27
+python-multipart>=0.0.9
+opencv-python-headless>=4.9
+numpy>=1.26
+pillow>=10.0
+# Tests and tooling
+pytest>=8.0
+httpx>=0.27

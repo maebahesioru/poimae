@@ -1,0 +1,9 @@
+s01_title|7|0|video/telop/s01_title.txt
+s02_problem|13|0|video/telop/s02_problem.txt
+s03_design|14|0|video/telop/s03_design.txt
+s04_hero|9|1|video/telop/s04_hero.txt
+s05_photo|24|1|video/telop/s05_photo.txt
+s06_text|16|1|video/telop/s06_text.txt
+s07_eval|20|0|video/telop/s07_eval.txt
+s08_limits|17|0|video/telop/s08_limits.txt
+s09_outro|9|0|video/telop/s09_outro.txt

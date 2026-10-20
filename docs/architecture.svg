@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" font-family="Noto Sans CJK JP, Noto Sans JP, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b9aa8"/>
+    </marker>
+    <style>
+      .box   { fill: #171e24; stroke: #2b3542; stroke-width: 1.5; rx: 10; }
+      .accent{ fill: #1e1a10; stroke: #ffb020; stroke-width: 1.8; rx: 10; }
+      .privacy{ fill: none; stroke: #56d69e; stroke-width: 1.6; stroke-dasharray: 7 5; rx: 14; }
+      .t     { fill: #f2f5f9; font-size: 17px; }
+      .h     { fill: #f2f5f9; font-size: 20px; font-weight: 700; }
+      .s     { fill: #9aa7b4; font-size: 14px; }
+      .a     { fill: #ffb020; font-size: 15px; font-weight: 700; }
+      .g     { fill: #56d69e; font-size: 15px; font-weight: 700; }
+      .edge  { stroke: #8b9aa8; stroke-width: 1.6; fill: none; marker-end: url(#arrow); }
+      .label { fill: #9aa7b4; font-size: 13px; }
+    </style>
+  </defs>
+
+  <rect width="1120" height="660" fill="#0f1418"/>
+
+  <text x="40" y="46" class="h" font-size="24">PoiMae の構成 — 写真は端末の中だけ、判断は自治体の公式辞典</text>
+  <text x="40" y="72" class="s">実線＝処理の流れ／緑の破線＝この境界の内側から外へは何も出ない（外部API・CDN・解析タグなし）</text>
+
+  <!-- privacy boundary -->
+  <rect class="privacy" x="28" y="96" width="1064" height="404"/>
+  <text x="44" y="122" class="g">端末内（localhost のみ／外部送信なし）</text>
+
+  <!-- browser -->
+  <rect class="box" x="56" y="146" width="230" height="150"/>
+  <text x="76" y="176" class="h">ブラウザ</text>
+  <text x="76" y="204" class="t">素の HTML / CSS / JS</text>
+  <text x="76" y="230" class="s">・写真を選ぶ／撮る</text>
+  <text x="76" y="252" class="s">・候補から選ぶ</text>
+  <text x="76" y="274" class="s">・収集曜日（localStorage）</text>
+
+  <!-- fastapi -->
+  <rect class="box" x="352" y="146" width="230" height="150"/>
+  <text x="372" y="176" class="h">FastAPI (app.py)</text>
+  <text x="372" y="204" class="s">GET  /               画面</text>
+  <text x="372" y="226" class="s">POST /api/photo      写真</text>
+  <text x="372" y="248" class="s">GET  /api/lookup     名前</text>
+  <text x="372" y="270" class="s">POST /api/week       収集日</text>
+
+  <!-- advisor -->
+  <rect class="accent" x="648" y="146" width="250" height="150"/>
+  <text x="668" y="176" class="a">advisor.py（中心）</text>
+  <text x="668" y="204" class="t">写真/名前 → 辞典 → 答え</text>
+  <text x="668" y="230" class="s">・候補を出す（断定しない）</text>
+  <text x="668" y="252" class="s">・警告：条件つき／他都市差</text>
+  <text x="668" y="274" class="s">・類語で1回だけ引き直す</text>
+
+  <!-- features + classifier -->
+  <rect class="box" x="352" y="336" width="230" height="132"/>
+  <text x="372" y="366" class="h">features.py</text>
+  <text x="372" y="392" class="t">OpenCV: 前処理・切り出し</text>
+  <text x="372" y="416" class="s">色 / 形 / テクスチャ</text>
+  <text x="372" y="440" class="s">→ 特徴量ベクトル</text>
+
+  <rect class="box" x="648" y="336" width="250" height="132"/>
+  <text x="668" y="366" class="h">classifier.py</text>
+  <text x="668" y="392" class="t">ルール表（学習なし）</text>
+  <text x="668" y="416" class="s">材質10種の候補＋根拠</text>
+  <text x="668" y="440" class="s">矛盾する証拠は減点</text>
+
+  <!-- data -->
+  <rect class="box" x="56" y="336" width="230" height="132"/>
+  <text x="76" y="366" class="h">data/municipalities</text>
+  <text x="76" y="392" class="t">自治体ルール JSON</text>
+  <text x="76" y="416" class="s">広島市 618品目（公式）</text>
+  <text x="76" y="440" class="s">札幌市1019品目／ダミー34</text>
+
+  <!-- edges -->
+  <line class="edge" x1="286" y1="200" x2="348" y2="200"/>
+  <text x="292" y="192" class="label">HTTP</text>
+
+  <line class="edge" x1="582" y1="200" x2="644" y2="200"/>
+  <text x="586" y="192" class="label">呼び出し</text>
+
+  <line class="edge" x1="700" y1="300" x2="700" y2="332"/>
+  <text x="708" y="322" class="label">画像</text>
+
+  <line class="edge" x1="582" y1="402" x2="644" y2="402"/>
+  <text x="590" y="394" class="label">特徴量</text>
+
+  <line class="edge" x1="467" y1="332" x2="467" y2="300"/>
+  <text x="475" y="322" class="label">バイト列</text>
+
+  <line class="edge" x1="286" y1="402" x2="348" y2="402"/>
+  <text x="292" y="394" class="label">検索</text>
+
+  <path class="edge" d="M 171 336 L 171 300 L 352 300"/>
+
+  <!-- footer notes -->
+  <text x="40" y="546" class="h" font-size="18">設計上の判断</text>
+  <text x="40" y="576" class="t">1. 写真は「答え」ではなく「質問を作る材料」。材質→品目は1対多なので、必ず人に選ばせる。</text>
+  <text x="40" y="602" class="t">2. 区分の正解は自治体のJSONだけが持つ。アプリは区分を発明しない。</text>
+  <text x="40" y="628" class="t">3. 外部に問い合わせない代わりに、収集日は自動取得しない（利用者が入れ、端末にだけ保存）。</text>
+</svg>

@@ -1,0 +1,302 @@
+{
+ "corpus": "eval/synthetic",
+ "images": 60,
+ "material_top1_accuracy": 0.65,
+ "material_top3_recall": 0.8833,
+ "material_baseline_most_common_class": "pet_bottle",
+ "material_baseline_accuracy": 0.1,
+ "per_class_recall": {
+  "battery": 1.0,
+  "cardboard": 0.6667,
+  "ceramic": 0.5,
+  "food_waste": 0.5,
+  "glass_bottle": 0.0,
+  "metal_can": 1.0,
+  "paper": 0.8333,
+  "pet_bottle": 0.5,
+  "plastic_film": 0.8333,
+  "textile": 0.6667
+ },
+ "by_difficulty": {
+  "clean": {
+   "images": 30,
+   "accuracy": 0.6333
+  },
+  "cluttered": {
+   "images": 30,
+   "accuracy": 0.6667
+  }
+ },
+ "confusion": {
+  "battery": {
+   "battery": 6,
+   "cardboard": 0,
+   "ceramic": 0,
+   "food_waste": 0,
+   "glass_bottle": 0,
+   "metal_can": 0,
+   "paper": 0,
+   "pet_bottle": 0,
+   "plastic_film": 0,
+   "textile": 0,
+   "unknown": 0
+  },
+  "cardboard": {
+   "battery": 0,
+   "cardboard": 4,
+   "ceramic": 0,
+   "food_waste": 0,
+   "glass_bottle": 0,
+   "metal_can": 0,
+   "paper": 0,
+   "pet_bottle": 0,
+   "plastic_film": 0,
+   "textile": 2,
+   "unknown": 0
+  },
+  "ceramic": {
+   "battery": 0,
+   "cardboard": 0,
+   "ceramic": 3,
+   "food_waste": 0,
+   "glass_bottle": 0,
+   "metal_can": 0,
+   "paper": 1,
+   "pet_bottle": 0,
+   "plastic_film": 2,
+   "textile": 0,
+   "unknown": 0
+  },
+  "food_waste": {
+   "battery": 0,
+   "cardboard": 1,
+   "ceramic": 0,
+   "food_waste": 3,
+   "glass_bottle": 2,
+   "metal_can": 0,
+   "paper": 0,
+   "pet_bottle": 0,
+   "plastic_film": 0,
+   "textile": 0,
+   "unknown": 0
+  },
+  "glass_bottle": {
+   "battery": 2,
+   "cardboard": 0,
+   "ceramic": 0,
+   "food_waste": 3,
+   "glass_bottle": 0,
+   "metal_can": 0,
+   "paper": 0,
+   "pet_bottle": 0,
+   "plastic_film": 0,
+   "textile": 1,
+   "unknown": 0
+  },
+  "metal_can": {
+   "battery": 0,
+   "cardboard": 0,
+   "ceramic": 0,
+   "food_waste": 0,
+   "glass_bottle": 0,
+   "metal_can": 6,
+   "paper": 0,
+   "pet_bottle": 0,
+   "plastic_film": 0,
+   "textile": 0,
+   "unknown": 0
+  },
+  "paper": {
+   "battery": 0,
+   "cardboard": 0,
+   "ceramic": 1,
+   "food_waste": 0,
+   "glass_bottle": 0,
+   "metal_can": 0,
+   "paper": 5,
+   "pet_bottle": 0,
+   "plastic_film": 0,
+   "textile": 0,
+   "unknown": 0
+  },
+  "pet_bottle": {
+   "battery": 0,
+   "cardboard": 0,
+   "ceramic": 0,
+   "food_waste": 0,
+   "glass_bottle": 0,
+   "metal_can": 0,
+   "paper": 0,
+   "pet_bottle": 3,
+   "plastic_film": 3,
+   "textile": 0,
+   "unknown": 0
+  },
+  "plastic_film": {
+   "battery": 0,
+   "cardboard": 0,
+   "ceramic": 0,
+   "food_waste": 0,
+   "glass_bottle": 0,
+   "metal_can": 0,
+   "paper": 1,
+   "pet_bottle": 0,
+   "plastic_film": 5,
+   "textile": 0,
+   "unknown": 0
+  },
+  "textile": {
+   "battery": 0,
+   "cardboard": 1,
+   "ceramic": 0,
+   "food_waste": 1,
+   "glass_bottle": 0,
+   "metal_can": 0,
+   "paper": 0,
+   "pet_bottle": 0,
+   "plastic_film": 0,
+   "textile": 4,
+   "unknown": 0
+  }
+ },
+ "labels": {
+  "battery": "電池",
+  "cardboard": "段ボール",
+  "ceramic": "陶磁器",
+  "food_waste": "生ごみ・食品",
+  "glass_bottle": "ガラスびん",
+  "metal_can": "金属缶",
+  "paper": "紙",
+  "pet_bottle": "ペットボトル",
+  "plastic_film": "プラ容器・フィルム",
+  "textile": "布・衣類",
+  "unknown": "判別できない"
+ },
+ "pipelines": {
+  "hiroshima": {
+   "scored_images": 12,
+   "accuracy": 0.5833,
+   "baseline_majority": 0.5,
+   "skipped_materials": [
+    "pet_bottle",
+    "metal_can",
+    "glass_bottle",
+    "paper",
+    "cardboard",
+    "plastic_film",
+    "food_waste",
+    "battery"
+   ],
+   "matrix": {
+    "不燃ごみ": {
+     "不燃ごみ": 3,
+     "可燃ごみ": 1,
+     "資源ごみ": 2,
+     "（判定なし）": 0
+    },
+    "資源ごみ": {
+     "不燃ごみ": 0,
+     "可燃ごみ": 1,
+     "資源ごみ": 4,
+     "（判定なし）": 1
+    }
+   }
+  },
+  "sample-dummy": {
+   "scored_images": 60,
+   "accuracy": 0.7167,
+   "baseline_majority": 0.3,
+   "skipped_materials": [],
+   "matrix": {
+    "びん・かん": {
+     "びん・かん": 10,
+     "もえないごみ": 0,
+     "もえるごみ": 6,
+     "プラスチック資源": 0,
+     "危険ごみ": 2
+    },
+    "もえないごみ": {
+     "びん・かん": 0,
+     "もえないごみ": 3,
+     "もえるごみ": 1,
+     "プラスチック資源": 2,
+     "危険ごみ": 0
+    },
+    "もえるごみ": {
+     "びん・かん": 4,
+     "もえないごみ": 1,
+     "もえるごみ": 13,
+     "プラスチック資源": 0,
+     "危険ごみ": 0
+    },
+    "プラスチック資源": {
+     "びん・かん": 0,
+     "もえないごみ": 0,
+     "もえるごみ": 1,
+     "プラスチック資源": 11,
+     "危険ごみ": 0
+    },
+    "危険ごみ": {
+     "びん・かん": 0,
+     "もえないごみ": 0,
+     "もえるごみ": 0,
+     "プラスチック資源": 0,
+     "危険ごみ": 6
+    }
+   }
+  },
+  "sapporo": {
+   "scored_images": 24,
+   "accuracy": 0.5,
+   "baseline_majority": 0.25,
+   "skipped_materials": [
+    "metal_can",
+    "glass_bottle",
+    "paper",
+    "cardboard",
+    "plastic_film",
+    "food_waste"
+   ],
+   "matrix": {
+    "びん・缶・ペットボトル": {
+     "びん・缶・ペットボトル": 3,
+     "容器包装プラスチック": 3,
+     "市で収集しないもの": 0,
+     "燃やせないごみ": 0,
+     "雑がみ": 0,
+     "（備考欄参照）": 0,
+     "（判定なし）": 0
+    },
+    "燃やせないごみ": {
+     "びん・缶・ペットボトル": 0,
+     "容器包装プラスチック": 2,
+     "市で収集しないもの": 0,
+     "燃やせないごみ": 3,
+     "雑がみ": 1,
+     "（備考欄参照）": 0,
+     "（判定なし）": 0
+    },
+    "燃やせるごみ": {
+     "びん・缶・ペットボトル": 0,
+     "容器包装プラスチック": 0,
+     "市で収集しないもの": 4,
+     "燃やせないごみ": 0,
+     "雑がみ": 1,
+     "（備考欄参照）": 0,
+     "（判定なし）": 1
+    },
+    "（備考欄参照）": {
+     "びん・缶・ペットボトル": 0,
+     "容器包装プラスチック": 0,
+     "市で収集しないもの": 0,
+     "燃やせないごみ": 0,
+     "雑がみ": 0,
+     "（備考欄参照）": 6,
+     "（判定なし）": 0
+    }
+   }
+  }
+ },
+ "note": "material_* は材質ルール表の実測。pipelines.* は『写真→材質語→その自治体の辞書』の配管を測ったもので、実際の自治体の合意正解ではない。期待値は辞書自身の応答（confident なもの）から取っている。",
+ "split": "test"
+}

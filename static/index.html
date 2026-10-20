@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PoiMae（ポイ前）— 捨てる前に、ひと呼吸</title>
+<meta name="description" content="写真で候補を絞り、自治体の公式ごみ分別辞典で区分を決めるローカルアプリ。画像は端末の外に出ません。">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">🐟</span>
+    <span class="brand-text"><strong>PoiMae</strong><small>ポイ前</small></span>
+  </div>
+  <div class="tagline">捨てる前に、ひと呼吸。</div>
+  <div class="privacy" title="画像はこの端末の localhost 内で処理され、外部に送信されません">
+    <span class="dot"></span>端末内処理・外部送信なし
+  </div>
+</header>
+
+<main>
+  <section class="panel">
+    <h2><span class="step">1</span>お住まいの自治体</h2>
+    <div class="row">
+      <select id="municipality" aria-label="自治体を選ぶ"></select>
+      <span id="source-badge" class="badge"></span>
+    </div>
+    <p id="source-note" class="muted small"></p>
+  </section>
+
+  <section class="panel">
+    <h2><span class="step">2</span>しらべる</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-mode="photo" role="tab" aria-selected="true">写真で</button>
+      <button class="tab" data-mode="text" role="tab" aria-selected="false">名前で</button>
+    </div>
+
+    <div id="mode-photo" class="mode">
+      <label class="drop" id="drop">
+        <input type="file" id="file" accept="image/*" capture="environment" hidden>
+        <span class="drop-icon" aria-hidden="true">📷</span>
+        <span class="drop-main">写真をえらぶ／撮る</span>
+        <span class="drop-sub">画像はこの端末の外に送られません</span>
+      </label>
+      <div class="samples">
+        <span class="muted small">写真が手元にないとき：</span>
+        <button class="chip" data-sample="pet_bottle">ペットボトル</button>
+        <button class="chip" data-sample="metal_can">アルミ缶</button>
+        <button class="chip" data-sample="cardboard">段ボール</button>
+        <button class="chip" data-sample="ceramic">茶わん</button>
+        <span class="muted small">（見本は合成画像）</span>
+      </div>
+      <div id="preview-wrap" class="preview-wrap" hidden>
+        <img id="preview" alt="選んだ写真のプレビュー">
+        <div id="preview-meta" class="muted small"></div>
+      </div>
+    </div>
+
+    <div id="mode-text" class="mode" hidden>
+      <div class="row">
+        <input id="query" type="search" placeholder="例：傘 / 乾電池 / ペットボトル" autocomplete="off">
+        <button id="search-btn" class="primary">しらべる</button>
+      </div>
+      <p class="muted small">辞典の表記と少し違っても探せます（ひらがな・カタカナ・全角半角・送り仮名）。</p>
+    </div>
+  </section>
+
+  <section class="panel" id="result-panel" hidden>
+    <h2><span class="step">3</span>結果</h2>
+    <div id="answer"></div>
+  </section>
+
+  <section class="panel">
+    <h2><span class="step">4</span>今週のごみの日</h2>
+    <p class="muted small">
+      収集日は地区ごとに違うため、このアプリは<b>日付を持っていません</b>。
+      お住まいの地区の曜日を入れてください（保存先はこのブラウザだけ）。
+      <a id="cal-link" href="#" target="_blank" rel="noopener">自治体の収集日を調べる</a>
+    </p>
+    <div id="week-config" class="week-config"></div>
+    <div id="week-out" class="week-out"></div>
+  </section>
+
+  <section class="panel">
+    <h2>このアプリについて</h2>
+    <ul class="facts">
+      <li><b>写真は判定しません。</b>写真は候補を絞るためだけに使い、区分は自治体の公式辞典が決めます。</li>
+      <li><b>確信が持てないときは答えません。</b>少しでも曖昧なら候補を出して、あなたに選んでもらいます。</li>
+      <li><b>データは公式ページから取り込みました。</b>出典URLと取得日は上のバッジから確認できます。</li>
+    </ul>
+    <p class="muted small" id="about-counts"></p>
+  </section>
+</main>
+
+<footer>
+  <span>PoiMae（ポイ前） v1.0 — 最終的な判断は自治体の公式情報に従ってください。</span>
+</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

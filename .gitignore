@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated, not source: the generator is committed instead of 120 PNGs.
+eval/synthetic/
+
+# Local noise
+*.log
+.DS_Store
